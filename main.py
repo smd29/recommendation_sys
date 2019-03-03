@@ -50,10 +50,13 @@ if __name__ == '__main__':
 
 
     #users preference list
-    # print("\nPreferred choices or selcted choice of the existing users:\n")
-    # location_list = user_preference_data.locationList(location,users)
-    # flat_type_list = user_preference_data.flatType(flat_type,users)
-    # flat_furnishing_list = user_preference_data.flatFurnishing(flat_furnishing,users)
+    ########THIS IS FOR GENRATING THE USER PREFEREENCES SO THAT WE CAN ASSIGN THE TRAINING USERS TO A FLAT################
+    print("\nPreferred choices or selcted choice of the existing users:\n")
+    location_list = user_preference_data.locationList(location,users)
+    flat_type_list = user_preference_data.flatType(flat_type,users)
+    flat_furnishing_list = user_preference_data.flatFurnishing(flat_furnishing,users)
+
+
 
 
 
