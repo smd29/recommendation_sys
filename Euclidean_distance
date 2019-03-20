@@ -61,13 +61,7 @@ for idx,val in enumerate(existing_user):
 
 print(euclidean_dist)
 
-counter=0
-sum=0
-for i in euclidean_dist:
-  sum=sum+i
-  counter= counter+1
-
-mean=sum/counter
+mean= np.mean(euclidean_dist)
 
 print(mean)
 
