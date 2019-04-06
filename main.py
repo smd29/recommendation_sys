@@ -1,4 +1,4 @@
-# import eucledian_distance
+import eucledian_distance
 import users_rating
 # # from math import sqrt
 import random
@@ -12,6 +12,10 @@ import csv
 if __name__ == '__main__':
     Assigned_house = open(r"C:\Users\nEW u\Desktop\Recommendation system\Implementation\DataSet\Assigned_houses.csv")
     csv_f = csv.reader(Assigned_house)
+
+    rating_dataset =  open(r"C:\Users\nEW u\Desktop\Recommendation system\Implementation\DataSet\rating.csv")
+    csv_rating = csv.reader(rating_dataset)
+
     user_id = []
     price = []
     location = []
@@ -34,9 +38,33 @@ if __name__ == '__main__':
     flat_type.remove('type')
     flat_id.remove('Flat id')
     user_id.remove('User')
+
+    userID_rating = []
+    price_rating = []
+    location_rating = []
+    mode_of_sharing_rating = []
+    flat_type_rating = []
+
+    for column in csv_rating:
+        #userID_rating.append(column[0])
+        price_rating.append(column[1])
+        location_rating.append(column[2])
+        mode_of_sharing_rating.append(column[3])
+        flat_type_rating.append(column[4])
+    price_rating.remove('Price')
+    location_rating.remove('Location')
+    mode_of_sharing_rating.remove('Mode_of_Sharing')
+    flat_type_rating.remove('Flat_type')
+
+    existing_users_rating = []
+    for i in range(0,100):
+        existing_users_rating.append([price_rating[i],location_rating[i],mode_of_sharing_rating[i],flat_type_rating[i]])
+    
+
+
     users = len(user_id)
     attributes = 4
-    print(users)
+    #print(users)
 
 
     #existing_users_rating = users_rating.existingUser(users, attributes)
@@ -55,7 +83,7 @@ if __name__ == '__main__':
     print("\nThe preferred choices for the new user is:\n" + str(new_user_pref) + "\n")
 
         # calculate eucledian distance and mean
-    # eucledian_distance_list, mean, user_id = eucledian_distance.eucledian(existing_users_rating, new_user_rating)
+    eucledian_distance_list, mean, user_id = eucledian_distance.eucledian(existing_users_rating, new_user_rating)
     #
     #     # find the similar user profiles
     #
@@ -63,7 +91,7 @@ if __name__ == '__main__':
     #     # similar_user_id_list = eucledian_distance.simUser(eucledian_distance_list,mean)
     #
     #     # sorted similar user list
-    # sorted_sim_user_list = eucledian_distance.sortedSimUser(eucledian_distance_list, mean)
+    sorted_sim_user_list = eucledian_distance.sortedSimUser(eucledian_distance_list, mean)
     #
     #     # users preference list
     #     ########THIS IS FOR GENRATING THE USER PREFEREENCES SO THAT WE CAN ASSIGN THE TRAINING USERS TO A FLAT################
