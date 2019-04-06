@@ -1,0 +1,101 @@
+User,Location ,Price,Size,type,Flat id
+1,Magarpatta City,30000,2BHK,Furnished,9
+2,Mundhwa,22000,3BHK,Semi-Funished,11
+3,Hadapsar,13500,2BHK,Unfurnished,31
+4,Hadapsar,35000,3BHK,Furnished,24
+5,Amanora Park Town,25000,2BHK,Semi-Funished,20
+6,Amanora Park Town,22500,2BHK,Semi-Funished,15
+7,Hadapsar,33000,3BHK,Semi-Funished,3
+8,Magarpatta City,70000,4BHK,Unfurnished,2
+9,Mundhwa,21000,2BHK,Semi-Funished,17
+10,Hadapsar,100000,4BHK,Furnished,12
+11,Magarpatta City,90000,3BHK,Semi-Funished,29
+12,Magarpatta City,18000,1BHK,Semi-Funished,4
+13,Magarpatta City,150000,4BHK,Semi-Funished,27
+14,Hadapsar,79900,5BHK,Semi-Funished,23
+15,Magarpatta City,90000,3BHK,Semi-Funished,29
+16,Mundhwa,16000,1BHK,Unfurnished,26
+17,Amanora Park Town,33000,3BHK,Unfurnished,6
+18,Magarpatta City,18000,1BHK,Semi-Funished,4
+19,Mundhwa,16000,1BHK,Unfurnished,26
+20,Magarpatta City,90000,3BHK,Semi-Funished,29
+21,Magarpatta City,70000,4BHK,Unfurnished,2
+22,Phursungi,8500,1BHK,Unfurnished,22
+23,Magarpatta City,7000,4BHK,Unfurnished,2
+24,Mundhwa,16000,1BHK,Unfurnished,26
+25,Mundhwa,16000,1BHK,Unfurnished,26
+26,Hadapsar,13500,2BHK,Semi-Funished,31
+27,Magarpatta City,150000,4BHK,Semi-Funished,30
+28,Hadapsar,30000,2BHK,Semi-Funished,17
+29,Magarpatta City,90000,3BHK,Semi-Funished,28
+30,Hadapsar,15000,2BHK,Semi-Funished,30
+31,Amanora Park Town,33000,3BHK,Unfurnished,6
+32,Amanora Park Town,25000,3BHK,Unfurnished,7
+33,Mundhwa,20000,2BHK,Furnished,13
+34,Amanora Park Town,36000,2BHK,Furnished,16
+35,Mundhwa,22000,3BHK,Semi-Funished,11
+36,Mundhwa,22000,3BHK,Semi-Funished,11
+37,Magarpatta City,150000,4BHK,Semi-Funished,27
+38,Mundhwa,21000,3BHK,Semi-Funished,17
+39,Magarpatta City,20000,2BHK,Furnished,13
+40,Hadapsar,16200,2BHK,Unfurnished,18
+41,Hadapsar,100000,4BHK,Furnished,12
+42,Magarpatta City,110000,3BHK,Furnished,5
+43,Mundhwa,21000,3BHK,Semi-Funished,17
+44,Hadapsar,35000,3BHK,Furnished,24
+45,Magarpatta City,150000,4BHK,Semi-Funished,27
+46,Hadapsar,100000,4BHK,Furnished,12
+47,Hadapsar,28000,2BHK,Unfurnished,25
+48,Amanora Park Town,25000,3BHK,Unfurnished,7
+49,Amanora Park Town,25000,3BHK,Unfurnished,7
+50,Magarpatta City,110000,3BHK,Furnished,5
+51,Hadapsar,16200,2BHK,Unfurnished,18
+52,Mundhwa,20000,2BHK,Furnished,13
+53,Hadapsar,30000,2BHK,Semi-Funished,28
+54,Hadapsar,15000,2BHK,Semi-Funished,30
+55,Magarpatta City,70000,4BHK,Unfurnished,2
+56,Magarpatta City,18000,1BHK,Semi-Funished,4
+57,Mundhwa,21000,3BHK,Semi-Funished,17
+58,Magarpatta City,90000,3BHK,Semi-Funished,29
+59,Hadapsar,28000,2BHK,Unfurnished,25
+60,Mundhwa,16000,1BHK,Unfurnished,26
+61,Mundhwa,16000,1BHK,Unfurnished,26
+62,Hadapsar,62000,4BHK,Furnished,14
+63,Amanora Park Town,25000,3BHK,Unfurnished,7
+64,Phursungi,8500,1BHK,Unfurnished,22
+65,Amanora Park Town,36000,2BHK,Furnished,16
+66,Mundhwa,22000,3BHK,Semi-Funished,11
+67,Mundhwa,22000,3BHK,Semi-Funished,11
+68,Mundhwa,22000,3BHK,Semi-Funished,11
+69,Magarpatta City,18000,1BHK,Semi-Funished,4
+70,Hadapsar,30000,2BHK,Semi-Funished,28
+71,Hadapsar,21000,3BHK,Semi-Funished,21
+72,Mundhwa,21000,3BHK,Semi-Funished,17
+73,Hadapsar,35000,3BHK,Furnished,24
+74,Phursungi,8500,1BHK,Unfurnished,22
+75,Amanora Park Town,36000,2BHK,Furnished,16
+76,Hadapsar,35000,3BHK,Furnished,24
+77,Magarpatta City,18000,1BHK,Semi-Funished,4
+78,Mundhwa,16000,1BHK,Unfurnished,26
+79,Magarpatta City,70000,4BHK,Unfurnished,2
+80,Hadapsar,75000,4BHK,Furnished,10
+81,Hadapsar,21000,3BHK,Semi-Funished,21
+82,Magarpatta City,26000,2BHK,Unfurnished,8
+83,Magarpatta City,18000,1BHK,Semi-Funished,4
+84,Magarpatta City,30000,2BHK,Furnished,9
+85,Amanora Park Town,22500,2BHK,Semi-Funished,15
+86,Magarpatta City,150000,4BHK,Semi-Funished,27
+87,Amanora Park Town,25000,3BHK,Unfurnished,7
+88,Magarpatta City,150000,4BHK,Semi-Funished,27
+89,Hadapsar,100000,4BHK,Furnished,12
+90,Hadapsar,13500,2BHK,Unfurnished,31
+91,Amanora Park Town,22500,2BHK,Semi-Funished,15
+92,Mundhwa,20000,2BHK,Furnished,13
+93,Mundhwa,21000,3BHK,Semi-Funished,17
+94,Hadapsar,62000,4BHK,Furnished,14
+95,Amanora Park Town,36000,2BHK,Furnished,16
+96,Hadapsar,35000,3BHK,Furnished,24
+97,Amanora Park Town,36000,2BHK,Furnished,16
+98,Magarpatta City,150000,4BHK,Semi-Funished,27
+99,Amanora Park Town,25000,3BHK,Unfurnished,7
+100,Amanora Park Town,22500,2BHK,Semi-Funished,15
