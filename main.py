@@ -59,7 +59,7 @@ if __name__ == '__main__':
     existing_users_rating = []
     for i in range(0,100):
         existing_users_rating.append([price_rating[i],location_rating[i],mode_of_sharing_rating[i],flat_type_rating[i]])
-    
+
 
 
     users = len(user_id)
@@ -92,6 +92,9 @@ if __name__ == '__main__':
     #
     #     # sorted similar user list
     sorted_sim_user_list = eucledian_distance.sortedSimUser(eucledian_distance_list, mean)
+    top_ten_sim_user_list = sorted_sim_user_list[:10]
+    print(top_ten_sim_user_list)
+    #print(len(sorted_sim_user_list))
     #
     #     # users preference list
     #     ########THIS IS FOR GENRATING THE USER PREFEREENCES SO THAT WE CAN ASSIGN THE TRAINING USERS TO A FLAT################
