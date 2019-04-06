@@ -80,3 +80,8 @@ if __name__ == '__main__':
     location_list = user_preference_data.locationList(location,users)
     flat_type_list = user_preference_data.flatType(flat_type,users)
     flat_furnishing_list = user_preference_data.flatFurnishing(flat_furnishing,users)
+
+
+
+
+
