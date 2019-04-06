@@ -6,12 +6,37 @@ import random
 import user_preference_data
 #import word_similarity
 #import itertools
+import csv
+
+
 
 #consider location is the 1st attribute, flat_type is 2nd and flat_furnishing is 3rd
 if __name__ == '__main__':
-    users = int(input("Print number of users: "))
-    attributes = 3 #as of now keeping it hard coded
-    # existing_users_rating = [ [] for i in range(users)]
+    Assigned_house=open('Assigned_houses.csv')
+    csv_f=csv.reader(Assigned_house)
+    user_id=[]    
+    price=[]
+    location=[]
+    size=[]
+    flat_type=[]
+    flat_id=[]
+    for column in csv_f:
+         user_id.append(column[1])
+         location.append(column[2])
+         price.append(column[3])
+         size.append(column[4])
+         flat_type.append(column[5])
+         flat_id.append(column[6]   
+  
+  
+    price.remove('Price')
+    location.remove('Location')
+    size.remove('size')
+    flat_type.remove('type')
+    flat_id.remove('Flat id')
+    user_id.remove('User')                    
+
+        # existing_users_rating = [ [] for i in range(users)]
     # for i in existing_users_rating:
     #     for x in range(attributes):
     #         i.append(random.randint(0, 5))
