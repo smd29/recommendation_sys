@@ -124,6 +124,9 @@ if __name__ == '__main__':
     for i in range(0,attributes):
         for j in range(0,len(top_ten_sim_user_list)):
             if(new_user_pref[sorted_index_of_newUser_rating[i]][0] in preferred_choices[top_ten_sim_user_list[j]]):
-                final_recommendation.append(preferred_choices[top_ten_sim_user_list[j]][-1])
+                value = preferred_choices[top_ten_sim_user_list[j]][-1]
+                if(value not in final_recommendation):
+                    final_recommendation.append(value)
+                #final_recommendation.append(preferred_choices[top_ten_sim_user_list[j]][-1])
 
     print(final_recommendation)
