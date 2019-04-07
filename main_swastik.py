@@ -167,14 +167,14 @@ for i in range(0,4):
        if(recommended==[]):
           for flats in top_ten_sim_user_list:
             recommended_flat=existing_users_flats[flats]
-            if(new_user_pref[idx]>recommended_flat[idx]):
+            if(pd.to_numeric(new_user_pref[idx])>pd.to_numeric(recommended_flat[idx])):
           
               recommended.append(recommended)
      
   else:
      for flats in top_ten_sim_user_list:
         recommended_flat=existing_users_flats[flats]
-        if(new_user_pref[idx]<recommended_flat[idx]):
+        if(pd.to_numeric(new_user_pref[idx])<pd.to_numeric(recommended_flat[idx])):
           recommended.remove(recommended_flat)
     
     
