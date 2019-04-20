@@ -23,7 +23,7 @@ for i in range(0,30):
   rent[i]=rent[i].replace(',', "")
 choices = []
 for i in range(0,30):
-    choices.append([area[i],rent[i],bhk[i],furnishing[i]])
+    choices.append([area[i],pd.to_numeric(rent[i]),bhk[i],furnishing[i]])
 
 print(choices)
 location = ['Amanora Park Town', 'Magarpatta City', 'Hadapsar', 'Mundhwa']
@@ -73,6 +73,8 @@ for i in range(len(choices)):
                 filtered_flats.append(choices[i])
 
 print(filtered_flats)
+
+
 
 
 
