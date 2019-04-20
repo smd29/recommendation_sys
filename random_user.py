@@ -113,7 +113,7 @@ while most_imp>3:
         if(pd.to_numeric(user_choices[idx])<pd.to_numeric(recommend[idx])):
           temp.remove(recommend)      
     else:
-      for j in range(0,len(temp)):
+      for j in range(0,len(recommended)):
         recommend=recommended[j]
         if(user_choices[idx]!=recommend[idx]):
           temp.remove(recommend)
