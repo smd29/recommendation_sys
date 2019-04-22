@@ -160,10 +160,19 @@ max_furnish = max(furnish_list)
 min_furnish = min(furnish_list)
 #################
 for i in range(len(location_list)):
-    location_list[i] = ((location_list[i]-min_location)/(max_location-min_location))
+    if(max_location==min_location):
+        location_list[i] = (location_list[i] - min_location)
+    elif(max_location!=min_location):
+        location_list[i] = ((location_list[i]-min_location)/(max_location-min_location))
     price_list[i] = ((max_price-price_list[i])/(max_price-min_price))
-    bhk_list[i] = ((bhk_list[i]-min_bhk)/(max_bhk-min_bhk))
-    furnish_list[i] = ((furnish_list[i]-min_furnish)/(max_furnish-min_furnish))
+    if(max_bhk==min_bhk):
+        bhk_list[i] = (bhk_list[i] - min_bhk)
+    elif(max_bhk!=min_bhk):
+        bhk_list[i] = ((bhk_list[i]-min_bhk)/(max_bhk-min_bhk))
+    if(max_furnish==min_furnish):
+        furnish_list[i] = (furnish_list[i] - min_furnish)
+    elif(max_furnish!=min_furnish):
+        furnish_list[i] = ((furnish_list[i]-min_furnish)/(max_furnish-min_furnish))
 print(location_list)
 print(price_list)
 print(bhk_list)
