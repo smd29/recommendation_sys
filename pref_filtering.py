@@ -1,10 +1,9 @@
 import random
 import csv
-import numpy as np
 import pandas as pd
 
 
-housing_data = open(r"C:\Users\nEW u\Desktop\Recommendation system\Implementation\DataSet\new_housing.csv")
+housing_data = open(r"C:\Users\I355872\Desktop\Thesis\Code\new_housing.csv")
 csv_f = csv.reader(housing_data)
 header = next(csv_f)
 attributes = header[1:]
@@ -159,8 +158,16 @@ max_bhk = max(bhk_list)
 min_bhk = min(bhk_list)
 max_furnish = max(furnish_list)
 min_furnish = min(furnish_list)
-
-
+#################
+for i in range(len(location_list)):
+    location_list[i] = ((location_list[i]-min_location)/(max_location-min_location))
+    price_list[i] = ((max_price-price_list[i])/(max_price-min_price))
+    bhk_list[i] = ((bhk_list[i]-min_bhk)/(max_bhk-min_bhk))
+    furnish_list[i] = ((furnish_list[i]-min_furnish)/(max_furnish-min_furnish))
+print(location_list)
+print(price_list)
+print(bhk_list)
+print(furnish_list)
 
 
 
