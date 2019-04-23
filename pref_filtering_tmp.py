@@ -243,6 +243,25 @@ for i in range(0,len(avg_weight),no_of_filtered_flats):
 for i in range(len(leaving_val)):
     leaving_val[i] = (leaving_val[i]/(len(leaving_val)-1))
 print(leaving_val)
-print(len(leaving_val))
+# print(len(leaving_val))
 
 ##calculating entering flow
+entering_val = []
+for i in range(0,no_of_filtered_flats):
+    val_ent = 0
+    for j in range(i,len(avg_weight),no_of_filtered_flats):
+        val_ent = val_ent+avg_weight[j]
+    entering_val.append(val_ent)
+for i in range(len(entering_val)):
+    entering_val[i] = (entering_val[i]/(len(entering_val)-1))
+print(entering_val)
+# print(len(entering_val))
+
+
+#calculate net outranking flow
+net_flow = []
+for i in range(len(leaving_val)):
+    net_flow.append(leaving_val[i]-entering_val[i])
+print(net_flow)
+sorted_indices =sorted(range(len(net_flow)), key=lambda k: net_flow[k],reverse=True)
+print(sorted_indices)
