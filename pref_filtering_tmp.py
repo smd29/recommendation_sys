@@ -205,10 +205,10 @@ for i in range(len(location_list)):
         else:
             d_furnish.append(furnish_list[i]-furnish_list[j])
 
-print(d_location)
-print(d_price)
-print(d_bhk)
-print(d_furnish)
+# print(d_location)
+# print(d_price)
+# print(d_bhk)
+# print(d_furnish)
 
 
 ############
@@ -229,7 +229,20 @@ for i in range(len(weighted_furnish)):
     avg_weight.append((weighted_location[i]+weighted_price[i]+weighted_bhk[i]+weighted_furnish[i])/total_imp)
 #print(len(avg_weight))
 ###calculating leaving flow
-leaving_vals_out = []
-last = 0
-while(last<len(avg_weight)):
-    leaving_vals_out.append(avg_weight[last:last+(no_of_filtered_flats)])
+print(avg_weight)
+print(len(avg_weight))
+leaving_val = []
+start = 0
+#end = start+no_of_filtered_flats
+for i in range(0,len(avg_weight),no_of_filtered_flats):
+    val = 0
+    for j in range(start,start+no_of_filtered_flats):
+        val = val+avg_weight[j]
+    start=start+no_of_filtered_flats
+    leaving_val.append(val)
+for i in range(len(leaving_val)):
+    leaving_val[i] = (leaving_val[i]/(len(leaving_val)-1))
+print(leaving_val)
+print(len(leaving_val))
+
+##calculating entering flow
